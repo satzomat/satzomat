@@ -10,7 +10,7 @@ Seit der Beschäftigung mit Literaturgeschichte gibt es diese Fragestellungen zu
 
 ## Textkorpus
 
-Um diesen Fragen nachzugehen, erstellen wir Textkorpora von ersten und letzten Sätzen zusammen, indem wir sie automatisch aus größeren Textkorpora extrahieren. Begonnen haben wir  mit Novellen aus dem Deutschen Textarchiv. Dort stehen die Texte im sogenannten DTA-Basisformat zur Verfügung, eine Untermenge des verbreiteten XML-basierten Kodierungs-Standards TEI. Dank dieser Struktur lassen sich Buchteile, Kapitel und Absätze voneinander abgrenzen.
+Um diesen Fragen nachzugehen, stellen wir Textkorpora von ersten und letzten Sätzen zusammen, indem wir sie automatisch aus größeren Textkorpora extrahieren. Begonnen haben wir  mit Novellen aus dem Deutschen Textarchiv. Dort stehen die Texte im sogenannten DTA-Basisformat zur Verfügung, eine Untermenge des verbreiteten XML-basierten Kodierungs-Standards TEI. Dank dieser Struktur lassen sich Buchteile, Kapitel und Absätze voneinander abgrenzen.
 
 Ganz trivial ist die Extrahierung es jedoch nicht: Literatur ist vielfältig, und das bildet sich auch im Markup ab. Wie lässt sich der erste Satz – also nach dem Titel – zweifelsfrei abgrenzen von beispielsweise einem vorangestellten Motto oder von einem einleitenden Vorwort der Herausgeber? Dazu wurden die Sätze einzeln nachgeprüft und gegebenenfalls korrigiert.
 
