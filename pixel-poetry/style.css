@@ -1,0 +1,24 @@
+/* CSS for 32_pixelized.html */
+body {
+	background-color: black;
+	font-size:10px;
+	font-weight:bold;
+}
+div {
+	max-width: 1200px;
+	margin:0 auto;
+}
+p {
+	font-family: courier, fixed, monospace;
+	width: 150px;
+	margin-right:10px;
+	overflow-wrap: break-word;
+	color: silver;
+	display:inline-block;
+	vertical-align:top;
+}
+a { color:inherit; text-decoration:none; }
+
+.Hölderlin { color:#ccff66; }
+.Schiller { color:#66ccff; }
+.Mörike { color:#ff66cc; }
