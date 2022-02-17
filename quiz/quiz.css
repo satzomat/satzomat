@@ -1,0 +1,99 @@
+/* defaults */
+body {
+	font-size:18px;
+	width:30em;
+	margin:2em auto;
+	background-color:black;
+	font-family:"Linux Libertine G", Georgia, "Times New Roman", Times, serif;
+}
+a:hover, a:visited, a:link {
+	color:inherit;
+	text-decoration:none;
+}
+
+/* page layout */
+h1 {
+	color:white;
+	text-align:center;
+}
+
+/* generic slide layout */
+div.slide {
+	padding:1em 2em;
+	border-radius:1em;
+	background-color:#efeedd;
+	margin:1em 0;
+	border:2px solid #cfcebd;
+	color:#192984;
+	display:none;
+}
+div.active-slide {
+	display:block;
+}
+h2 {
+	text-align:center;
+	position:relative;
+}
+h2::before {
+	position:absolute;
+	content:'“';
+	font-size:8em;
+	top:-0.25em;
+	right:-0.1em;
+	color:#fffeed;
+}
+
+/* question */
+div.question {
+	font-size:1.3em;
+	line-height:1.3em;
+}
+
+/* answers */
+div.answers ol {
+	/*list-style-type:none;*/
+	margin:0.5em 0;
+	padding:0 1em;
+}
+div.answers ol li {
+	margin:0.25em 0;
+}
+div.answers ol li input {
+	display:none;
+}
+div.answers ol li label {
+	display:block;
+	padding:0.25em;
+}
+div.answers ol li label:hover {
+	background-color:silver;
+}
+div.answers ol li input[value='0']:checked + label {
+	background-color:red;
+	color:white;
+}
+div.answers ol li input[value='1']:checked + label {
+	background-color:green;
+	color:white;
+}
+
+/* result */
+#result .slide p {
+	text-align:center;
+}
+
+/* buttons */
+#buttons {
+	text-align:center;
+}
+#buttons button {
+	border-radius:0.75em;
+	background-color:#eee;
+	border:2px solid #999;
+	font-size:18px;
+	font-family:inherit;
+	padding:0.5em 0.75em;
+}
+#buttons button:hover {
+	background-color:#ddd;
+}
