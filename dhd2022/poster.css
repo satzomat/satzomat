@@ -1,0 +1,253 @@
+/* css3 */
+
+/* VARIABLEN */
+
+:root {
+	/* Maße */
+	--paper-width:841mm;
+	--paper-height:1189mm;
+	--box-size:calc(var(--paper-width) / 10);
+	--font-base-size:calc(var(--paper-width) / 100);
+	/* Standardfarben für Box */
+	--box-background-color:#efeedd;
+	--box-symbol-color:#fffeed;
+	/* Schriftarten */
+	--font-antiqua:"Linux Libertine G", Georgia, "Times New Roman", Times, serif;
+	--font-sansserif:Arial, Helvetica, sans-serif;
+	/* Farben für Textgattung */
+	--maerchen-color:#085643;
+	--maerchen-color-rgba:rgba(8, 86, 67, 0.2);
+	--novelle-color:#192984;
+	--novelle-color-rgba:rgba(25, 41, 132, 0.2);
+	--roman-color:#fbb839;
+	--roman-color-rgba:rgba(251, 184, 57, 0.2);
+	--xmas-color:#ae0721;
+	--xmas-color-rgba:rgba(174, 7, 33, 0.2);
+}
+
+/* RESET */
+
+table,tr,td,p,ul,ol,li,h1,h2,h3 {
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+/* ALLGEMEINES */
+
+body {
+	margin:0 auto;
+	/*border:1px solid gray;*/
+	font-size:var(--font-base-size);
+	font-family:var(--font-antiqua);
+	background-color:black;
+	width:var(--paper-width);
+	height:var(--paper-height);
+}
+
+table#page-content {
+	border:1em solid transparent;
+	border-spacing:1em;
+	margin:4em auto;
+}
+tr {
+	/* Zeile */
+	height:var(--box-size);
+}
+td {
+	/* Zelle */
+	width:var(--box-size);
+	overflow:visible;
+}
+td.box {
+	/* Box */
+	font-family:var(--font-antiqua);
+	background-color:var(--box-background-color);
+	border-radius:2em;
+	font-size:0.4em;
+	position:relative;
+	z-index:1;
+}
+a {
+	text-decoration:none;
+	color:inherit;
+}
+
+/* TITEL-BEREICH */
+
+td.title {
+	background-color:inherit;
+	color:white;
+	font-size:5em;
+	letter-spacing:-0.02em;
+	text-align:center;
+	font-variant:small-caps;
+}
+
+/* INFOBOXEN */
+
+td.box.info {
+	font-family:var(--font-sansserif);
+	color:black;
+	color:white;
+	text-shadow: 0px 5px 20px rgba(0,0,0,0.75);
+}
+td.box.info.color1 {
+	/*background-color:var(--novelle-color);*/
+	background-color:#EFEE00; /* green */
+	background-color:#2FDE00; /* dhdgrün */
+}
+td.box.info.color2 {
+	/*background-color:var(--roman-color);*/
+	background-color:#EFEE00; /* blue */
+	background-color:#2FDE00; /* dhdgrün */
+}
+td.box.info.color3 {
+	/*background-color:var(--maerchen-color);*/
+	background-color:#EFEE00; /* pink */
+	background-color:#2FDE00; /* dhdgrün */
+}
+td.box.info.color4 {
+	/*background-color:var(--xmas-color);*/
+	background-color:#EFEE00; /* yellow */
+	background-color:#2FDE00; /* dhdgrün */
+}
+td.box.info h2 {
+	font-size:2.2em;
+	margin:0 1em 1em 1em;
+	text-align:center;
+}
+td.box.info p {
+	margin:0.5em 1em 0 1em;
+	font-size:1.5em;
+}
+td.box.info ul {
+	list-style-type:'> ';
+	margin:0.5em 1em 0 1em;
+	padding-left:2em;
+}
+td.box.info li {
+	margin:0.5em 0;
+	font-size:1.5em;
+}
+
+/* CREDITS-BEREICH */
+
+td.credits {
+	background-color:inherit;
+	font-family:var(--font-sansserif);
+	font-size:1em;
+	color:white;
+}
+td.credits p {
+	margin:1em 0.5em;
+	font-size:0.6em;
+}
+td.credits.license {
+	background-image:url(images/cc-by-symbol.png);
+	background-size:40%;
+	background-repeat:no-repeat;
+	background-position:center 35%;
+}
+td.credits.license p {
+	font-size:0.6em;
+	margin:8em 0.5em 0 0.5em;
+	text-align:center;
+}
+td.credits.www {
+	background-image:url(images/satzomat-logo.png);
+	background-size:35%;
+	background-repeat:no-repeat;
+	background-position:center 30%;
+}
+td.credits.www p {
+	font-size:1.2em;
+	font-weight:bold;
+	margin:3em 0 0;
+	text-align:center;
+}
+td.credits.twitter {
+	background-image:url(images/twitter-logo.png);
+	background-size:30%;
+	background-repeat:no-repeat;
+	background-position:center 30%;
+}
+td.credits.twitter p {
+	font-size:1.2em;
+	font-weight:bold;
+	margin:3em 0 0;
+	text-align:center;
+}
+td.credits.github {
+	background-image:url(images/github-logo.png);
+	background-size:25%;
+	background-repeat:no-repeat;
+	background-position:center 30%;
+}
+td.credits.github p {
+	font-size:1.2em;
+	font-weight:bold;
+	margin:4em 0 0;
+	text-align:center;
+}
+
+/* QUIZBOX */
+
+td.box p {
+	/* Absatz für ersten Satz */
+	margin:0 2em 2em;
+}
+td.box.novelle::before,
+td.box.roman::before,
+td.box.maerchen::before {
+	/* Tüdelchen */
+	position:absolute;
+	content:'”';
+	font-size:18em;
+	top:0.1em;
+	right:0.1em;
+	color:var(--box-symbol-color);
+	z-index:-1;
+}
+td.box.novelle::before {
+	/* Farbe für Novellen-Tüdelchen */
+	color:var(--novelle-color-rgba);
+}
+td.box.roman::before {
+	/* Farbe für Roman-Tüdelchen */
+	color:var(--roman-color-rgba);
+}
+td.box.maerchen::before {
+	/* Farbe für Märchen-Tüdelchen */
+	color:var(--maerchen-color-rgba);
+}
+td.box ol {
+	/* Liste möglicher Antworten */
+	margin:2em 2em 0;
+	padding:0 1em;
+}
+td.box ol li {
+	/* Listenelement für mögliche Antwort */
+	margin:0.5em 0;
+}
+
+/* QUIZ-FUNKTIONEN */
+
+td.box div.answers ol li input {
+	display:none;
+}
+td.box div.answers ol li label {
+	display:block;
+	padding:0.2em;
+}
+td.box div.answers ol li label:hover {
+	background-color:silver;
+}
+td.box div.answers ol li input[value='0']:checked + label {
+	background-color:red;
+	color:white;
+}
+td.box div.answers ol li input[value='1']:checked + label {
+	background-color:green;
+	color:white;
+}
