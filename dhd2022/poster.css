@@ -94,23 +94,19 @@ td.box.info {
 }
 td.box.info.color1 {
 	/*background-color:var(--novelle-color);*/
-	background-color:#EFEE00; /* green */
 	background-color:#2FDE00; /* dhdgrün */
 }
 td.box.info.color2 {
 	/*background-color:var(--roman-color);*/
-	background-color:#EFEE00; /* blue */
-	background-color:#2FDE00; /* dhdgrün */
+	background-color:#1DA1F2; /* twitterblau */
 }
 td.box.info.color3 {
 	/*background-color:var(--maerchen-color);*/
-	background-color:#EFEE00; /* pink */
-	background-color:#2FDE00; /* dhdgrün */
+	background-color:#FA1CA8; /* pink */
 }
 td.box.info.color4 {
 	/*background-color:var(--xmas-color);*/
 	background-color:#EFEE00; /* yellow */
-	background-color:#2FDE00; /* dhdgrün */
 }
 td.box.info h2 {
 	font-size:2.2em;
