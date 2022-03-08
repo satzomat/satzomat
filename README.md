@@ -1,6 +1,6 @@
 # Satzomat
 
-Satzomat: Ein Kompositum aus Satz und Automat. Twittert erste Sätze aus der deutschsprachigen Literatur, ganz von allein.
+Satzomat: Ein Kompositum aus Satz und Automat. [Twittert](https://twitter.com/satzomat) erste Sätze aus der deutschsprachigen Literatur, ganz von allein.
 
 ## Warum erste Sätze?
 
@@ -28,3 +28,4 @@ Beim Twittern der Texte unter @satzomat hilft uns der Service [*AutoChirp*](http
   * [Paper](https://zenodo.org/record/6328153)
   * [Poster (PDF)](https://zenodo.org/record/6322559)
   * [Poster (HTML, interaktiv)](http://satzomat.de/dhd2022/poster.html)
+* [Twitter-Profil](https://twitter.com/satzomat)
