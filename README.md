@@ -16,4 +16,16 @@ Die automatische Extraktion kann durchaus problematisch sein: Literatur ist viel
 
 ## Twitter und AutoChirp
 
-Beim Twittern der Texte unter @satzomat hilft uns der Service *AutoChirp*, der zu geplanten Uhrzeiten zweimal täglich einen ersten Satz postet.
+Beim Twittern der Texte unter @satzomat hilft uns der Service [*AutoChirp*](https://autochirp.spinfo.uni-koeln.de/home), der zu geplanten Uhrzeiten zweimal täglich einen ersten Satz postet.
+
+## Weiterführende Ressourcen
+
+* Satzomat-Datenkorpora [123](https://github.com/satzomat/corpus)
+* Datenkorpora mit den Voyant Tools betrachten:
+  * [Erste Sätze aller Novellen aus dem DTA](https://voyant-tools.org/?view=corpusset&stopList=stop.de.german.txt&input=https://github.com/satzomat/corpus/blob/main/01_novellen_txt.zip)
+  * [Erste Sätze aller Romane aus dem DTA](https://voyant-tools.org/?view=corpusset&stopList=stop.de.german.txt&input=https://github.com/satzomat/corpus/blob/main/02_romante_txt.zip)
+  * [Erste Sätze aller Märchen aus Zeno.org](https://voyant-tools.org/?view=corpusset&stopList=stop.de.german.txt&input=https://github.com/satzomat/corpus/blob/main/03_maerchen_txt.zip)
+* Satzomat-Poster auf der DHd 2022
+  * [Paper](https://zenodo.org/record/6328153)
+  * [Poster (PDF)](https://zenodo.org/record/6322559)
+  * [Poster (HTML, interaktiv)](http://satzomat.de/dhd2022/poster.html)
